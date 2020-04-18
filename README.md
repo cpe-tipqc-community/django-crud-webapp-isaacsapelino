@@ -18,3 +18,6 @@ The following packages that was used:
 * six                        1.14.0
 * sqlparse                   0.3.1
 
+## Initialization
+On default, I have written a JSON file for the categories that will be needing to be upload in django.
+Use the command ```python manage.py loaddata test-db.json``` to begin uploading the fixtures.
