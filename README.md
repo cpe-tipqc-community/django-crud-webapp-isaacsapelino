@@ -1,11 +1,9 @@
-# dahub
-social media site
 # django-crud-webapp-isaacsapelino
 
 The following materials here are the source code for the crud webapp made by Isaac Sapelino.
 
 The following packages that was used: 
-##Requirements
+## Requirements
 asgiref                    3.2.7
 bcrypt                     3.1.7
 cffi                       1.14.0
