@@ -1,0 +1,33 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" class="img-fluid logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0 ml-4">
+        <div class="input-group input-group-sm">
+            <input class="form-control mr-sm-2 search" type="search" id="searchB" placeholder="Search" aria-label="Search" aria-describedby="inputGroup-sizing-sm">
+        </div>      
+      <button class="btn btn-primary btn-sm my-2 my-sm-0" id="searchBt" type="submit">Search</button>
+    </form>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active mr-lg-2">
+        <a class="nav-link" href="{% url 'post-create' %}"><i class="fas fa-plus"></i> New Post<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item mr-md-2">
+        <a class="nav-link faa-parent animated-hover" href="#" id="message"><i class="fa fa-envelope faa-shake"></i> Messages<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle faa-parent animated-hover" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Hi! {{request.user.username}}<span class="sr-only">(current)</span></a>
+        <div class="dropdown-menu frame" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#" id="view_profile"><i class="fas fa-address-card"></i> View profile</a>
+            <div class="dropdown-divider">
+            </div>
+            <a class="dropdown-item" href="#" id="settings"><i class="fas fa-cog"></i> Account settings</a>
+            <a class="dropdown-item" href="{% url 'logoutPage' %}"><i class="fas fa-sign-out-alt"></i> Log out</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,23 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block title %}daHub {% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container h-100">
+	<div class="jumbotron h-100">
+		{% for post in posts %}
+		<div class="card mb-3">
+			<h5 class="card-header">
+				Category: {{post.category}}
+			</h5>
+			<div class="card-body">
+				<h5 class="card-title"><a href="{% url 'post-detail' post.pk %}">{{post.title}}</a></h5>
+				<h6 class="card-subtitle mb-4 text-muted">User: {{post.author}}</h6>
+				<p class="card-text">{{post.post}}</p>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% endblock content %}
