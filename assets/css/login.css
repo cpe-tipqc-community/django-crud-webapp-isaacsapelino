@@ -1,0 +1,100 @@
+body,
+html
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #0C7FFF;
+	height: 100%;
+}
+
+/* Login */
+.login-card {
+	height: 500px;
+	width: 400px;
+	background-color: white;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.logo_container {
+	top: 40px;
+	width: 250px;
+	position: absolute;
+}
+
+.form_container {
+	margin-top: 150px;
+}
+
+.input-group-text {
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+input,
+button {
+	width: 250px !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+.login_btn {
+  width: 100%;
+  background: #0C7FFF !important;
+  color: white !important;
+}
+.login_btn:focus{
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.input-group-text
+{
+	background-color: #0C7FFF !important;
+	color: white !important;
+	border: 0 !important;
+}
+
+/* Register */
+
+.reg-card {
+	height: 550px;
+	width: 450px;
+	background-color: white;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.input-box-text
+{
+	width: 50% !important; 
+}
+
+.input-container-reg
+{
+	display: flex !important;
+	flex-direction: row !important;
+}
+
+.form_reg_container{
+	position: relative !important;
+	margin-top: 150px !important;
+}
